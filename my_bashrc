@@ -1,0 +1,14 @@
+
+#
+# git alias
+#
+alias ga='git add'
+alias gaa='git add .'
+alias gck='git checkout'
+alias gb='git branch'
+alias gc='git commit'
+alias gs='git status'
+alias gph='git push origin'
+alias gpl='git pull origin'
+alias gm='git merge'
+
