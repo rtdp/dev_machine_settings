@@ -11,4 +11,18 @@ alias gs='git status'
 alias gph='git push origin'
 alias gpl='git pull origin'
 alias gm='git merge'
+alias gca='git commit -a'
 
+
+#
+# navigation Shortcuts 
+#
+alias c='clear'
+
+#
+# rails shortcuts
+#
+alias rs='bundle exec rails server'
+alias rc='bundle exec rails console'
+alias rg='bundle exec rails g'
+alias rl='tail -f log/*'
