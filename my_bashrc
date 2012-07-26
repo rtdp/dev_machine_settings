@@ -12,6 +12,11 @@ alias gph='git push origin'
 alias gpl='git pull origin'
 alias gm='git merge'
 alias gca='git commit -a'
+# stash
+alias gss='git stash'
+alias gsl='git stash list'
+alias gsd='git stash drop'
+
 
 
 #
