@@ -3,6 +3,8 @@
 # git alias
 #
 alias ga='git add'
+alias gd='git diff'
+alias gdh='git diff HEAD'
 alias gaa='git add .'
 alias gck='git checkout'
 alias gb='git branch'
@@ -12,10 +14,12 @@ alias gph='git push origin'
 alias gpl='git pull origin'
 alias gm='git merge'
 alias gca='git commit -a'
+
 # stash
-alias gss='git stash'
+alias gsh='git stash'
 alias gsl='git stash list'
 alias gsd='git stash drop'
+alias gsc='git stash clear'
 
 
 
@@ -31,3 +35,13 @@ alias rs='bundle exec rails server'
 alias rc='bundle exec rails console'
 alias rg='bundle exec rails g'
 alias rl='tail -f log/*'
+
+# 
+# tmux shortcuts - 
+alias tns='tmux new -s'
+alias ta='tmux attach -t'
+alias ts='tmux switch -t'
+alias tls='tmux list-sessions'
+
+alias tnw='tmux new-window'
+alias trw='tmux rename-window'
