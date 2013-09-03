@@ -1,0 +1,9 @@
+[user]
+	name = rtdp
+	email = rtdp@rainingclouds.com
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
