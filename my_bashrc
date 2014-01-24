@@ -29,6 +29,11 @@ alias gsc='git stash clear'
 alias c='clear'
 
 #
+# Generic linux specific --
+#
+alias pag='ps aux | grep'
+
+#
 # rails shortcuts
 #
 alias rs='bundle exec rails server'
