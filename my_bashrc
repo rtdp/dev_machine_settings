@@ -57,3 +57,6 @@ alias zs='zeus s'
 alias zc='zeus c'
 alias zr='zeus rake'
 alias zg='zeus generate'
+
+# a local, secret alias file ;-)
+#source ./local_alias
