@@ -2,6 +2,9 @@
 " infect -
 execute pathogen#infect()
 
+" turn off vi compatible mode
+set nocompatible
+
 " general - 
 " syntax on
 set number
@@ -11,6 +14,11 @@ filetype plugin on
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" indent - 
+set smartindent
+set autoindent
+filetype indent on
 
 
 " vim omincomplete - 
@@ -32,7 +40,7 @@ let g:used_javascript_libs = 'jquery'
 :imap jj <Esc>
 
 " better looking indent lines - 
-let g:indentLine_char = '|'
+" let g:indentLine_char = '|'
 
 " closing paranthesis mappings - 
 inoremap        (  ()<Left>
@@ -40,3 +48,24 @@ inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")
 
 inoremap        {  {}<Left>
 inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
+
+" settings specific codeschool theme - 
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
+set guifont=Monaco:h12
+"let g:NERDTreeWinPos = "right"
+"set guioptions-=T " Removes top toolbar
+"set guioptions-=r " Removes right hand scroll bar
+"set go-=L " Removes left hand scroll bar
+"autocmd User Rails let b:surround_{char2nr('-')} = "<% \r %>" " displays <% %> correctly
+":set cpoptions+=$ " puts a $ marker for the end of words/lines in cw/c$ commands
+
+" colorcolum settings to keep widths in check - 
+:set colorcolumn=80
+
+" heighlight current line - 
+:set cursorline
+
+" faster grep - 
+set grepprg=ack-grep
