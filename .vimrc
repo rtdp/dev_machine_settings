@@ -1,6 +1,8 @@
 
-" infect -
-execute pathogen#infect()
+" Use vundle - 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " turn off vi compatible mode
 set nocompatible
@@ -54,9 +56,9 @@ inoremap        {  {}<Left>
 inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 
 " settings specific codeschool theme - 
-" let g:solarized_termcolors=256
-" set background=dark
-" colorscheme solarized
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 " set guifont=Monaco:h12
 "let g:NERDTreeWinPos = "right"
 "set guioptions-=T " Removes top toolbar
@@ -66,10 +68,34 @@ inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}
 ":set cpoptions+=$ " puts a $ marker for the end of words/lines in cw/c$ commands
 
 " colorcolum settings to keep widths in check - 
-" :set colorcolumn=80
+:set colorcolumn=80
+:hi ColorColumn guibg=#2d2d2d ctermbg=246
+"highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 " heighlight current line - 
 " :set cursorline
 
 " faster grep - 
 set grepprg=ack-grep
+
+" ===============================
+" Start of Vundle Plugins "
+" ==============================
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" vim-rails -
+Plugin 'tpope/vim-rails'
+
+" command-T - 
+Plugin 'wincent/command-t'
+
+" Search fast with ack - 
+Bundle 'mileszs/ack.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+" End of Vundle Plugins
+" ==============================
