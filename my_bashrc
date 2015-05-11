@@ -8,18 +8,25 @@ alias gdh='git diff HEAD'
 alias gaa='git add .'
 alias gck='git checkout'
 alias gb='git branch'
+alias gbd='git branch -d'
 alias gc='git commit'
 alias gs='git status'
 alias gph='git push origin'
 alias gpl='git pull origin'
 alias gm='git merge'
 alias gca='git commit -a'
+alias grm='git rebase master'
+alias gri='git rebase -i'
+alias gcam='git commit --amend'
 
 # stash
 alias gsh='git stash'
 alias gsl='git stash list'
 alias gsd='git stash drop'
 alias gsc='git stash clear'
+
+# hub - 
+alias hpr='hub pull-request -i'
 
 
 
@@ -40,6 +47,7 @@ alias rs='bundle exec rails server'
 alias rc='bundle exec rails console'
 alias rg='bundle exec rails g'
 alias rl='tail -f log/*'
+alias be='bundle exec'
 
 # 
 # tmux shortcuts - 
