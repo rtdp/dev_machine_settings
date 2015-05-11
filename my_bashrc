@@ -1,4 +1,8 @@
 
+
+# hub setup =
+# alias git=hub
+
 #
 # git alias
 #
@@ -28,7 +32,9 @@ alias gsc='git stash clear'
 # hub - 
 alias hpr='hub pull-request -i'
 
-
+# Ruby, Rails
+alias be='bundle exec'
+alias ber='bundle exec rails'
 
 #
 # navigation Shortcuts 
